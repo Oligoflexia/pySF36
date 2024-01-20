@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pySF36"
+version = "0.1a1"
+authors = [
+    {name = "Souvik Maiti", email = "souvik.maiti1@ucalgary.ca"}
+ ]
+description = "Tools to calculate SF36 scores from patient response values."
+readme = "README.rst"
+license = { file = "LICENSE" }
+maintainers = [
+    {name = "Souvik Maiti", email = "souvik.maiti1@ucalgary.ca"}
+ ]
+keywords = [
+    "SF36", "health measure", "quality of life measure", "health survey analysis", "survey scoring", "health research"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+
+    # TODO
+    "License :: OSI Approved :: ",
+
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Information Analysis"
+]
+requires-python = ">= 3.11"
+
+[project.urls]
+# TODO
+Documentation = ""
+Repository = ""
+Issues = ""
+Changelog = ""
+
+[project.optional-dependencies]
+dataframe = ["pandas"]
+
+[project.scripts]
+pySF36 = "cli:main"
+
+[tool.setuptools.package-data]
+# TODO
+pysf36 = []
+"pysf36.data" = []
